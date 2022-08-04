@@ -26,7 +26,7 @@ jobs:
     - name: Install python
       run: |
         python -m pip install --upgrade pip
-        pip install netCDF4<1.6.0
+        pip install "netCDF4<1.6.0"
     - name: Unit test
       run: |
         python -m unittest discover -p 'test_*.py'
